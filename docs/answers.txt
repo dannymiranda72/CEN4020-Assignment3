@@ -1,0 +1,160 @@
+Git Lab Tutorials:
+Main - Intro Sequence (Completed 10/16)
+Remotes - Push & Pull -- Git Remote (Completed (10/17)
+
+Github Account: Dannymiranda72 set up (December 2021)
+
+
+Answers for Question 5:
+
+1)
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+--------------------------------------------------------------------
+2)
+6 commits by Esteban
+4 commits by me on terminal
+1 more commit by me on Github
+Command used: git shortlong -sn --all
+
+--------------------------------------------------------------------
+3)
+When README.md was last updated:
+Author: Danny Miranda <dm19d@fsu.edu>
+Date:   Tue Oct 17 21:15:44 2023 -0400
+
+    updated README.md
+Command used: git log
+
+-------------------------------------------------------------------
+4)
+2 reasons to use branches
+	1) makes it possible to add functionality and work on it
+	   independently
+	2) keeps the main branch clear of things you're unsure of
+
+------------------------------------------------------------------
+5)
+Git log -> list committed history
+git status -> inspect current working directory and staging area
+
+-------------------------------------------------------------------
+6)
+git log Vehicle.h
+
+gives following:
+commit 03106e92a1e36708334c69dd071088c6d0937b1d
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 11 16:58:59 2019 -0400
+
+    -> Declared the trivial destructors for all classes
+    -> Fully formatted toString methods for all classes
+    -> Added test cases in the main method for testing the implementations
+    -> Added validation on value for engine sizes in the  Car class
+
+commit f9cd890b3f89fbe5920a1fdf7da34ee915ba27b9
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:42:39 2019 -0400
+
+    -> Partial implementation of PoweredVehicle and Car
+    -> Definition of virtual functions
+
+commit f9c24b027e6275ff6a1911241014c44971b4e8d0
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:04:36 2019 -0400
+
+    Refactored Vehicle class to separate definition and declarations
+    Added mileageEstimate abstract method to Vehicle
+    Implemented the Bicycle class
+
+commit 4f6c88c953f4601929df7980a19dcdaee4f13854
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 14:59:19 2019 -0400
+
+    Base Vehicle class created
+
+-------------------------------------------------------------------------------
+7)
+git log --all --grep='file'
+
+gives following:
+commit 5735b670039ac050cd91da58db9e4ffc954192bf (HEAD -> master, origin/master, origin/HEAD)
+Author: Danny Miranda <dm19d@fsu.edu>
+Date:   Tue Oct 17 21:43:51 2023 -0400
+
+    empty file answers.txt
+
+commit f4975e5d56ff331762b318bfd12c5236e0299f25
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+
+--------------------------------------------------------------------------------
+8)
+	1) inheritance -> one class inherits attributes/methods from another class
+
+	2) polymorphism -> a method/attribute can be applied to many different instances
+			   when learning to drive a car, you can drive all cars
+
+	3) encapsulation -> like inheritance, but restricts methods and attributes
+
+----------------------------------------------------------------------------------
+9)
+
+Integration Manager Workflow -> there's a developer public and private repository
+				that each developer pushes to. The developers pull
+				from the blessed repository and an integration manager
+				pulls from each developers' public/private repo to push
+				to the blessed repo
+
+Dictator/Lieutenants Worfklow -> developers pull from blessed repo to push to their 
+				 lieutenants, there are more lieutenants than developers
+				 lieutenants push to the dictator who is the only one who
+				 can push to the blessed repo
+
+----------------------------------------------------------------------------------------
+10)
+
+A team of 100 developers can benefit from the Dictator and Lieutenants workflow because if
+there is a big program such as Microsoft Word, you can have 25 functions such as grammar 
+check, formatting, etc... and have a lieutenant for each function and 5 developers developing
+that function. The dictator would then check each of the 25 functions for conflicts and then
+he himself pushes to the main repo. The benefit of this over a centralized workflow is first,
+organization, and secondly, no developer in one function can interfere with code in another 
+function (security)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
